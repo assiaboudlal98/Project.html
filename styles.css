@@ -1,0 +1,9 @@
+/* Hide all payment method sections by default */
+.payment-info {
+    display: none;
+}
+
+/* Show the selected payment method section */
+.payment-info.active {
+    display: block;
+}

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Payment Form</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="payment-form-container">
+        <form class="payment-form">
+            <h2>Payment Information</h2>
+
+            <!-- Payment Method Selection -->
+            <label for="payment-method">Choose a payment method:</label>
+            <select id="payment-method" name="payment-method" required>
+                <option value="credit-card">Credit/Debit Card</option>
+                <option value="paypal">PayPal</option>
+                <option value="bank-transfer">Bank Transfer</option>
+                <option value="crypto">Cryptocurrency</option>
+            </select>
+            
+            <!-- Credit/Debit Card Fields -->
+            <div id="credit-card-info" class="payment-info">
+                <label for="cardholder-name">Cardholder Name:</label>
+                <input type="text" id="cardholder-name" name="cardholder-name" required>
+                
+                <label for="card-number">Card Number:</label>
+                <input type="text" id="card-number" name="card-number" required>
+                
+                <label for="expiry-date">Expiry Date:</label>
+                <input type="text" id="expiry-date" name="expiry-date" placeholder="MM/YY" required>
